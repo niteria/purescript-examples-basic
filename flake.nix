@@ -22,7 +22,7 @@
               spagoYaml = ./spago.yaml;
               spagoLock = ./spago.lock;
               src = ./.;
-              nativeBuildInputs = [ pkgs.purs-unstable pkgs.spago-unstable pkgs.esbuild ];
+              nativeBuildInputs = [ pkgs.purs-unstable pkgs.spago-unstable pkgs.esbuild pkgs.purescript-language-server];
               version = "0.1.0";
               buildPhase = "spago bundle --module Example.Basic.Main --outfile example.js";
               installPhase = ''
@@ -31,18 +31,6 @@
                 cp example.js $out/example.js;
               '';
             };
-          # devShells = {
-          #   default = pkgs.mkShell {
-          #     name = "my-purescript-project";
-          #     inputsFrom = builtins.attrValues self.packages.${system};
-          #     buildInputs = with pkgs; [
-          #       purs
-          #       spago-unstable
-          #       purs-tidy-bin.purs-tidy-0_10_0
-          #       purs-backend-es
-          #     ];
-          #   };
-          # };
         }
     );
 }
