@@ -1,3 +1,5 @@
 /dist/example.js
 .spago
 output
+.purs-repl
+result

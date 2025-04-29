@@ -1,0 +1,10 @@
+package:
+  name: halogen-examples-basic
+  dependencies:
+    - effect
+    - halogen
+    - prelude
+workspace:
+  packageSet:
+    registry: 64.6.0
+  extraPackages: {}
