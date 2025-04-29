@@ -1,0 +1,15 @@
+# Basic
+
+*This is the basic example as a separate repository*
+
+This example demonstrates close to the smallest Halogen component you can build. It's unlikely you'd make components this small in a real world application, but this lets you see the essential parts of a component definition.
+
+## Building
+
+You can build this example from the root of the Halogen project:
+
+```sh
+spago bundle-app --main Example.Basic.Main --to dist/example.js
+```
+
+This will bundle a runnable JS file, `example.js`, in the `dist` directory. You can view the running application by opening the corresponding `index.html` file.
